@@ -1,0 +1,32 @@
+<html>
+    <head>        
+        <title> webgl lab</title>
+    </head>
+    <body onload="getResources();">
+        <canvas id="surface" width="1920" height="1080">
+            html5 expected
+        </canvas>    
+        <div style="display:inline-block; min-width:400px">
+            <h3>CAMERA pos</h3>
+            <h1 id='campos'></h1> 
+            <h3> CENTER</h3>
+            <h1 id='cenpos'></h1>
+        </div>
+        <div style="display:inline-block; min-width:400px">
+            <h1>long(x): </h1>
+            <h1 id='long'></h1>
+            <h1>lat(y): </h1>
+            <h1 id='lat'></h1>
+        </div>
+        <img id="crate-image" src="resources/crate.png" width="0" height="0"></img>                
+        <img id="moon-image" src="resources/moon.gif" width="0" height="0"></img>      
+
+        <script src="gl-matrix.js"></script> 
+        <script src="util.js"></script> 
+        <script src="snow-flake.js"></script>       
+        <script src="snow.js"></script>       
+        <script src="shaders.js"></script>       
+        <script src="primitives.js"></script>        
+        <script src="app.js"></script>        
+    </body>
+</html>
